@@ -61,36 +61,38 @@ function Services() {
   return (
     <section className="flex min-h-screen w-full  flex-wrap items-center justify-center border-b-2 border-b-gray-400 ">
       {/* {repeater.map((v, i) => <ServiceItem index={i}/>)} */}
- 
+
       <ServiceItem index={1} />
       <ServiceItem index={2} />
       <ServiceItem index={3} />
       <ServiceItem index={4} />
-
-      
     </section>
   );
 }
 
-function ServiceItem(props:{index: number}) {
+function ServiceItem(props: { index: number }) {
   return (
-   
-<div className={" w-1/3 rounded-md m-2 text-wrap " + (props.index % 2 == 0 ? ' flex  flex-row ' : ' flex flex-row-reverse ')}>
-      <img src={PCBPrintingBG} className={ " w-24 h-16 rounded-lg m-2 inline "}  />
+    <div
+      className={
+        " m-2 w-1/3 text-wrap rounded-md " +
+        (props.index % 2 == 0 ? " flex  flex-row " : " flex flex-row-reverse ")
+      }
+    >
+      <img
+        src={PCBPrintingBG}
+        className={" m-2 inline h-16 w-24 rounded-lg "}
+      />
       <div className={"inline flex-col"}>
-      <h4>
-        <b>Service 1</b>
-      </h4>
-      <p>
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form, by injected humour, or
-        randomised words which don't look even slightly believable
-      </p>
+        <h4>
+          <b>Service 1</b>
+        </h4>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable
+        </p>
       </div>
-      
     </div>
-    
-    
   );
 }
 
