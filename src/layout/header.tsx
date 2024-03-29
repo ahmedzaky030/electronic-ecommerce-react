@@ -11,8 +11,8 @@ export function Header() {
         <ul className="flex flex-row items-center justify-center">
           { pages.map((v) => (
             <li
-              className="box-border mx-4 my-2 border-b-2 border-solid border-gray-500
-                         p-4 cursor-pointer hover:border-red-500"
+              className="box-border mx-4 my-2 hover:border-b-2 border-solid border-gray-500
+                         p-2 cursor-pointer hover:border-red-500"
             >{v}</li>
           ))}
         </ul>
